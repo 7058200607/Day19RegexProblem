@@ -17,6 +17,10 @@ namespace Day19RegexProblem
         //for lower letters uc5
         public static string Regex_Passward1 = "^(?=.*[a-z]).{8,}$";
 
+        // Containing at least Upper letter in passward
+        public static string Regex_Passward2 = "^(?=.*[a-z])(?=.*[A-Z]).{8,}$";
+
+
         public bool ValidateFirstName(string firstName)
         {
             return Regex.IsMatch(firstName, Regex_FirstName);
@@ -36,7 +40,10 @@ namespace Day19RegexProblem
         public bool ValidatePassward1(string passward1)
         {
             return Regex.IsMatch(passward1, Regex_Passward1);
-
+        }
+        public bool ValidatePassward2(string passward2)
+        {
+            return Regex.IsMatch(passward2, Regex_Passward2);
         }
     }
 }
