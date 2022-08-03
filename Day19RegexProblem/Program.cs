@@ -25,6 +25,10 @@ namespace Day19RegexProblem
             Console.WriteLine("Enter Your EmailID :");
             string EmailId = Console.ReadLine();
             Console.WriteLine(userRegestration.ValidateEmailId(EmailId));
+
+            Console.WriteLine("Enter Your Phone Number :");
+            string PhoneNumber = Console.ReadLine();
+            Console.WriteLine(userRegestration.ValidatePhoneNumber(PhoneNumber));
         }
     }
 }
