@@ -16,6 +16,11 @@ namespace Day19RegexProblem
             Console.WriteLine("Enter Your First Name :");
             string FirstName = Console.ReadLine();
             Console.WriteLine(userRegestration.ValidateFirstName(FirstName));
+
+
+            Console.WriteLine("Enter Your Last Name :");
+            string LastName = Console.ReadLine();
+            Console.WriteLine(userRegestration.ValidateFirstName(LastName));
         }
     }
 }
