@@ -38,6 +38,10 @@ namespace Day19RegexProblem
             string Passward2 = Console.ReadLine();
             Console.WriteLine(userRegestration.ValidatePassward2(Passward2));
 
+            Console.WriteLine("Enter Your Passward3 Number :");
+            string Passward3 = Console.ReadLine();
+            Console.WriteLine(userRegestration.ValidatePassward3(Passward3));
+
         }
 
          
