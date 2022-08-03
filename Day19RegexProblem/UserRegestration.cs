@@ -21,6 +21,8 @@ namespace Day19RegexProblem
         public static string Regex_Passward2 = "^(?=.*[a-z])(?=.*[A-Z]).{8,}$";
         //Containing at least one Numeric Character
         public static string Regex_Passward3 = "^(?=.*\\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$";
+        // contain one special character
+        public static string Regex_Passward4 = "^.*(?=.{8,})(?=.*\\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!*@#$%^&+=]).*$";
 
 
         public bool ValidateFirstName(string firstName)
@@ -50,6 +52,10 @@ namespace Day19RegexProblem
         public bool ValidatePassward3(string passward3)
         {
             return Regex.IsMatch(passward3, Regex_Passward3);
+        }
+        public bool ValidatePassward4(string passward4)
+        {
+            return Regex.IsMatch(passward4, Regex_Passward4);
         }
     }
 
